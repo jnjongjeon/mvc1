@@ -23,6 +23,6 @@ public class MemberSaveControllerV3 implements ControllerV3 {
 
         ModelView mv = new ModelView("save-result");
         mv.getModel().put("member", member);
-        return mv;
+        return mv; // 논리url랑 멤버가 들어가있음
     }
 }

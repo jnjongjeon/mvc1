@@ -42,8 +42,8 @@ public class FrontControllerServletV4 extends HttpServlet {
         }
 
         //paramMap
-        Map<String, String> paramMap = createParamMap(request);
-        Map<String, Object> model = new HashMap<>();
+        Map<String, String> paramMap = createParamMap(request); // 파라미터 맵 생성
+        Map<String, Object> model = new HashMap<>(); // 모델 맵 생성
         String viewName = controller.process(paramMap, model);//논리이름 ex) new-form
 
         MyView view = viewResolver(viewName);

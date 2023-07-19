@@ -41,10 +41,10 @@ public class FrontControllerServletV3 extends HttpServlet {
             return;
         }
 
-        //paramMap
+        //paramMap ex) "username" : "kim"
         Map<String, String> paramMap = createParamMap(request);
         //논리이름과 모델들어있음
-        ModelView mv = controller.process(paramMap); //논리이름 ex) new-form
+        ModelView mv = controller.process(paramMap); //논리이름 ex) new-form, 모델 멤버.
 
         String viewName = mv.getViewName();
 
